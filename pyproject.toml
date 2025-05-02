@@ -1,0 +1,42 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sphere-flexbase"
+version = "0.1.0"
+description = "Python client for FlexBase HTTP API"
+authors = [
+    {name = "Sphere Team", email = "d.ushurov54@protonmail.com"}
+]
+dependencies = [
+    "requests>=2.31.0",
+]
+requires-python = ">=3.8"
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Topic :: Database",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "isort>=5.0.0",
+    "flake8>=4.0.0",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/sphere-team/sphere-flexbase"
+"Bug Tracker" = "https://github.com/sphere-team/sphere-flexbase/issues" 
