@@ -1,4 +1,4 @@
-from .client import FlexBaseClient
+from .client import FlexBaseClient, SearchQuery
 from .exceptions import (
     FlexBaseError,
     UnauthorizedError,
@@ -8,13 +8,15 @@ from .exceptions import (
     TimeoutError
 )
 
-__version__ = "0.1.0"
+__version__ = "0.2.0"
 __all__ = [
     "FlexBaseClient",
+    "SearchQuery",
     "FlexBaseError",
     "UnauthorizedError",
     "BadRequestError",
     "NotFoundError",
     "ConnectionError",
     "TimeoutError"
-] 
+]
+ 
